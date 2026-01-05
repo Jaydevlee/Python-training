@@ -6,17 +6,17 @@ currnet_year = 2025
 print("이름 : %s 나이 : %d" % (name, birth_year))
 
 #Q2
-id_number="9990101-1234567"
+id_number="990101-1234567"
 
-print(id_number[:5:])
+print(id_number[:6:])
 print(id_number[-7: ])
 print(id_number.replace("-", ""))
 
 #Q3
 filename = "report_final_v2.pdf"
 #확장자만 출력
-print("확장자만 출력" + filename[-3: ])
-print("파일이름만 출력" + filename[ :15])
+print("확장자만 출력: " + filename[-3: ])
+print("파일이름만 출력: " + filename[ :15])
 
 #Q4
 
@@ -62,7 +62,7 @@ print(string.replace('a', 'A'))
 #Q12
 t1 = 'python'
 t2 = 'java'
-print((t1+t2) * 4)
+print((t1 + " " + t2 + " ") * 4)
 
 #Q13
 branch =  "2020/03(E) (IFRS연결)"
