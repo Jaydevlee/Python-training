@@ -51,3 +51,13 @@ print("이름: " + name2 + " 나이: " + str(age2))
 #2. formatting
 print("이름 : %s 나이: %d" % (name1, age1))
 print("이름 : %s 나이: %d" % (name2, age2))
+
+# 문자열 나누기  split
+s = 'hello world'
+print(s)
+r = s.split() #띄어 쓰기 기준으로 문자열 나누기
+print(r)
+
+data = '2026-01-05'
+d = data.split("-") #하이픈을 기준으로 문자열 나누기
+print(d)
