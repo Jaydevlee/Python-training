@@ -2,8 +2,10 @@
 name = "김하늘"
 birth_year = 2003
 currnet_year = 2025
+age = currnet_year - birth_year + 1
 
-print("이름 : %s 나이 : %d" % (name, birth_year))
+print("이름 : %s 나이 : %d" % (name, age))
+#print("이름 : " + name + " 나이 : " + str(age))
 
 #Q2
 id_number="990101-1234567"
@@ -16,7 +18,8 @@ print(id_number.replace("-", ""))
 filename = "report_final_v2.pdf"
 #확장자만 출력
 print("확장자만 출력: " + filename[-3: ])
-print("파일이름만 출력: " + filename[ :15])
+# print("파일이름만 출력: " + filename[ :15])
+print("파일이름만 출력: " + filename[ : -4])
 
 #Q4
 
@@ -28,7 +31,7 @@ phone = "01011115222"
 
 ph1 = phone[ : 3]
 ph2 = phone[3 : 7]
-ph3 = phone[8 : 11]
+ph3 = phone[-4 : ]
 
 print(ph1 + "-" + ph2 + "-" + ph3) 
 
@@ -39,13 +42,14 @@ print(a * b)
 
 #Q7
 count = 7
-print("총 개수 :  %d 개" % count)
+# print("총 개수 :  %d 개" % count)
+print("총 개수 : " + str(count) + "개")
 
 #Q8
 car_number = "12가3456"
 
-print(len(car_number))
-print(car_number[3 : 8])
+print("글자 수 : " + str(len(car_number)))
+print(car_number[3 : 7])
 
 #Q9
 star = "★"
@@ -54,9 +58,11 @@ print(star * 10)
 #Q10
 name = '이준호'
 score = 87
+print("학생" + name +"의 점수는 " + str(score) + "점 입니다.")
 
 #Q11
 string = 'abcdfe2a354a32a'
+#print(string.upper()) 전체 문자열을 대문자로 표기
 print(string.replace('a', 'A'))
 
 #Q12

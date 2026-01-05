@@ -10,10 +10,10 @@ print(word[0], word[2])
 
 #뒤 4자만 출력
 car_number = '24가 3456'
-#문자열 슬라이싱([시작인덱스:종료인덱스+1:단계])
-#시작인덱스 생략: 문자열 처음부터
-#끝인덱스 생략: 문자열 끝까지
-#단계: 칸 이동 간격
+#문자열 슬라이싱([startIndex : endIndex(출력범위에서 + 1) : stepIndex])
+#startIndex 기본값(생략): 0
+#endIndex 기본값(생략): 문자열 끝까지
+#stepIndex 기본값(생략): 1
 print(car_number[4:8:1])
 print(car_number[4::1])
 print(car_number[-4: ])
