@@ -46,16 +46,12 @@ def print_arithmetic_operation(a, b, c):
         return a * c
     elif b == '/':
         return a / c
-result = print_arithmetic_operation(num1, opt, num2)
-print(result)
+print(print_arithmetic_operation(num1, opt, num2))
 
 #Q6
-n = int(input("구구단을 만들 숫자 입력"))
-
 def gugudan(n):
     list_gugudan = []
     for i in range(1, 10, 1):
         list_gugudan.append(n * i)
     return list_gugudan
-result = gugudan(3)
-print(result)
+print(gugudan(3))
