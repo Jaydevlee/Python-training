@@ -9,12 +9,15 @@ print (result)
 nums = [1, 3, 2, 10, 12, 11, 15]
 def print_even(a):
     num_even=[]
-    for i in range(0, len(a)):
+    for i in range(0, len(a)): 
         if a[i] % 2 == 0:
             num_even.append(a[i])
     return num_even #return이 for안에 존재하면 안 됨, 내어쓰기로 for밖으로 빼내기
-result = print_even(nums)
-print(result)
+print(print_even(nums))
+
+#for i in a:
+#   if i % 2 == 0:
+#       num_even.append(i)
 
 #Q3
 def make_url(str):
@@ -24,6 +27,7 @@ result = make_url("naver")
 print(result)
 
 #Q4
+#문자열 + 숫자는 Python에서 허용되지 않음
 def func (a,b):
     print(a * 3)
 func("안녕", 3)
@@ -34,13 +38,13 @@ num2 = int(input("숫자 입력"))
 opt = input("산술연산자 중 하나 입력")
 
 def print_arithmetic_operation(a, b, c):
-    if(b == '+'):
+    if b == '+':
         return a + c
-    elif(b == '-'):
+    elif b == '-':
         return a - c
-    elif(b == '*'):
+    elif b == '*':
         return a * c
-    elif(b == '/'):
+    elif b == '/':
         return a / c
 result = print_arithmetic_operation(num1, opt, num2)
 print(result)
