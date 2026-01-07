@@ -1,0 +1,6 @@
+# macOS 가상 환경 부분 무시
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+.python-version
